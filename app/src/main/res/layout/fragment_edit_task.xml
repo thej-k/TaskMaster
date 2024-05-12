@@ -37,26 +37,13 @@
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/editPriority"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:hint="Set priority"
-            android:padding="12dp"
-            android:textSize="18sp"
-            android:layout_below="@id/editNoteTitle"
-            android:background="@drawable/blue_border"
-            android:layout_marginTop="16dp"
-            android:maxLines="1"
-            android:fontFamily="@font/poppins"/>
-
-        <EditText
             android:id="@+id/editDeadline"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Set deadline"
             android:padding="12dp"
             android:textSize="18sp"
-            android:layout_below="@id/editPriority"
+            android:layout_below="@id/editNoteTitle"
             android:background="@drawable/blue_border"
             android:layout_marginTop="16dp"
             android:maxLines="1"

@@ -22,7 +22,7 @@ import com.example.taskmaster.model.Task
 import com.example.taskmaster.viewmodel.TaskViewModel
 
 
-@Suppress("DEPRECATION")
+
 class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextListener, MenuProvider {
 
     private var homeBinding: FragmentHomeBinding? = null

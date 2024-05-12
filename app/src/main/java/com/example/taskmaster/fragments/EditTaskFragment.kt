@@ -52,17 +52,15 @@ class EditTaskFragment : Fragment(R.layout.fragment_edit_task), MenuProvider {
 
         binding.editNoteTitle.setText(currentTask.taskTitle)
         binding.editTaskDesc.setText(currentTask.taskDesc)
-        binding.editPriority.setText(currentTask.taskPriority)
         binding.editDeadline.setText(currentTask.taskDeadline)
 
         binding.editTaskDone.setOnClickListener{
             val taskTitle = binding.editNoteTitle.text.toString().trim()
             val taskDesc = binding.editTaskDesc.text.toString().trim()
-            val taskPriority = binding.editPriority.text.toString().trim()
             val taskDeadline = binding.editDeadline.text.toString().trim()
 
             if(taskTitle.isNotEmpty()){
-                val task = Task(currentTask.id, taskTitle, taskDesc, taskPriority, taskDeadline)
+                val task = Task(currentTask.id, taskTitle, taskDesc, taskDeadline)
                 tasksViewModel.updateTask(task)
                 view.findNavController().popBackStack(R.id.homeFragment, false)
             }else{

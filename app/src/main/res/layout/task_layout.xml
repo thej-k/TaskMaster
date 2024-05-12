@@ -31,10 +31,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/taskDesc"
+                android:id="@+id/taskDeadline"
                 android:layout_marginTop="8dp"
                 android:maxHeight="170dp"
-                android:text="Description"
+                android:text="Deadline"
                 android:textSize="14sp"
                 android:fontFamily="@font/poppins"
                 android:textColor="@color/black"/>
